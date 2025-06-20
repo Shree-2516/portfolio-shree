@@ -1,0 +1,32 @@
+.achievements {
+  padding: 40px 20px;
+  background-color: #fff8e1; /* soft yellow */
+  text-align: center;
+}
+
+.achievements h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #6b4f00;
+}
+
+.achievements ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.achievements li {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.achievements a {
+  color: #0077cc;
+  margin-left: 8px;
+  text-decoration: none;
+}
+
+.achievements a:hover {
+  text-decoration: underline;
+}

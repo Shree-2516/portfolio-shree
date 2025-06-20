@@ -1,0 +1,17 @@
+/* App.css */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+body {
+  background-color: #ffffff;
+}

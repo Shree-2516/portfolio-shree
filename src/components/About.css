@@ -1,0 +1,33 @@
+.about {
+  padding: 40px 20px;
+  background-color: #f0f8ff; /* Light blue background */
+  color: #000; /* Black text for visibility */
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #000; /* Ensure heading is black */
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #000; /* Ensure paragraph text is black */
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.resume-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.resume-link:hover {
+  text-decoration: underline;
+  color: #004c99;
+}
