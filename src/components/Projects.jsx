@@ -4,53 +4,61 @@ import './Projects.css';
 function Projects() {
   return (
     <section className="projects">
-      <h2>My Projects</h2>
+      <div className="projects-container">
+        <h2 className="projects-heading">📁 My Projects</h2>
 
-      {/* Project 1 */}
-      <div className="project-card">
-        <a
-          href="https://github.com/Shree-2516/trading-journal-flask"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="project-link"
-        >
-          <h3>Trading Journal App</h3>
-        </a>
-        <p>
-          A Python + Flask-based web app to log and analyze trades using SQLite and Chart.js.
-        </p>
+        {/* Project 1 */}
+        <div className="project-card">
+          <a
+            href="https://github.com/Shree-2516/carelink-appointment-app.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            <h3>CareLink - Doctor Appointment Booking</h3>
+          </a>
+          <p>MERN stack appointment booking web application.</p>
+        </div>
+
+        {/* Project 2 */}
+        <div className="project-card">
+          <a
+            href="https://github.com/Shree-2516/trading-journal-flask"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            <h3>Trading Journal App</h3>
+          </a>
+          <p>Python + Flask app for logging and analyzing trades using SQLite and Chart.js.</p>
+        </div>
+
+        {/* Project 3 */}
+        <div className="project-card">
+          <a
+            href="https://github.com/Shree-2516/flask-student-record-system"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            <h3>Student CRUD App</h3>
+          </a>
+          <p>Full CRUD system using Python Flask and SQLite for managing student records.</p>
+        </div>
+
+        {/* Project 4 */}
+        <div className="project-card">
+          <a
+            href="https://github.com/Shree-2516/portfolio-shree"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            <h3>Portfolio Website</h3>
+          </a>
+          <p>Responsive personal portfolio built using React and CSS — the site you're currently viewing!</p>
+        </div>
       </div>
-
-      {/* Project 2 */}
-      <div className="project-card">
-        <a
-          href="https://github.com/Shree-2516/flask-student-record-systems"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="project-link"
-        >
-          <h3>Student CRUD App</h3>
-        </a>
-        <p>
-          A full CRUD system using Python Flask and SQLite to manage student records.
-        </p>
-      </div>
-
-      {/* Project 3 */}
-      <div className="project-card">
-        <a
-          href="https://github.com/Shree-2516/portfolio-website"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="project-link"
-        >
-          <h3>Portfolio Website</h3>
-        </a>
-        <p>
-          A responsive personal portfolio built using React, CSS. Thas you viewing now live.
-        </p>
-      </div>
-
     </section>
   );
 }

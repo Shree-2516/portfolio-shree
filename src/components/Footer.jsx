@@ -5,6 +5,7 @@ function Footer() {
   return (
     <footer className="footer">
       <p>© 2025 Shreeyash. All rights reserved.</p>
+      <p>+91 9322343007</p>
       <ul>
         <li><a href="https://github.com/Shree-2516" target="_blank">GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/shreeyash-paraj/" target="_blank">LinkedIn</a></li>

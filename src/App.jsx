@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import About from "./components/About";
+import RecentProjects from './components/RecentProjects';
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className="app">
       <Header />
+      <RecentProjects />
       <section id="about"><About /></section>
       <section id="Education"><Education /></section>
       <section id="skills"><Skills /></section>

@@ -3,22 +3,29 @@ import './Skills.css';
 
 function Skills() {
   return (
-    <section>
-      <div>
     <section className="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Python, Java</li>
-        <li>Flask, React</li>
-        <li>MongoDB, SQLite</li>
-        
-      </ul>
-    </section>
-    </div>
+      <div className="skills-container">
+        <h2 className="skills-heading">🛠 Skills</h2>
+        <ul className="skills-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>Flask</li>
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>MongoDB</li>
+          <li>SQLite</li>
+          <li>AWS</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>CI/CD</li>
+          <li>RESTful APIs</li>
+        </ul>
+      </div>
     </section>
   );
 }
 
 export default Skills;
-

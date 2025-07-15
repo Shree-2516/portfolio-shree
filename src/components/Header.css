@@ -1,11 +1,12 @@
 .header {
   background-color: #004466;
   color: white;
-  padding: 10px 20px;
+  padding: 15px 25px;
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .header-container {
@@ -15,15 +16,34 @@
   flex-wrap: wrap;
 }
 
-.header h1 {
-  font-size: 1.8rem;
+/* Profile + Name section */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;         /* 👈 Make it circular */
+  object-fit: cover;
+  border: 2px solid white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffffff;
   margin: 0;
 }
 
 .menu-icon {
   display: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   cursor: pointer;
+  color: white;
 }
 
 .nav-menu {
@@ -32,20 +52,24 @@
   gap: 25px;
   padding: 0;
   margin: 0;
+  align-items: center;
 }
 
 .nav-menu li a {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .nav-menu li a:hover {
-  color: #66ccff;
+  background-color: #006080;
+  color: #ffffff;
 }
 
-/* 👇 Responsive Styles */
+/* ✅ Responsive Styles */
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
@@ -56,14 +80,28 @@
     width: 100%;
     display: none;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 12px;
   }
 
   .nav-menu.open {
     display: flex;
+    animation: fadeIn 0.3s ease-in-out;
   }
 
   .nav-menu li {
     margin: 10px 0;
   }
+
+  .logo-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+  }
+}
+
+/* 👇 Optional animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
